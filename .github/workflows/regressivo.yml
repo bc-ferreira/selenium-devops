@@ -2,8 +2,7 @@ name: Testes Regressivos QAzando
 
 on:
   pull_request:
-    branches:
-      - master
+    branches: [master]
 
 jobs:
   RunTest:
