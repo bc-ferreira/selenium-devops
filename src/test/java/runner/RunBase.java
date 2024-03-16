@@ -28,6 +28,8 @@ public class RunBase {
             case "chrome-ci":
                 ChromeOptions option = new ChromeOptions();
                 option.addArguments("--headless");
+                option.addArguments("--disable-gpu");
+                option.addArguments("--no-sandbox");
                 driver = new ChromeDriver(option);
                 break;
             case "firefox":
