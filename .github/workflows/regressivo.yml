@@ -2,7 +2,8 @@ name: Testes Regressivos QAzando
 
 on:
   pull_request:
-    branches: [master]
+    branches:
+      - master
 
 jobs:
   RunTest:
@@ -18,7 +19,6 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
           cache: maven
-        run: java -version
 
       - name: Instalar Chrome
         run: |
