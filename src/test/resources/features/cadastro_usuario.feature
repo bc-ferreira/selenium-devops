@@ -1,6 +1,6 @@
 # language: pt
 
-  @cadastro_de_usuario
+  @cadastro_de_usuario @regressao
   Funcionalidade: Cadastro de usuário
     Eu como usuário do sistema
     Quero me cadastrar
