@@ -11,3 +11,9 @@ R
 "src/test/java/pages/LoginPage.java,2/f/2febc867dad266b12f3cf09596e572e0dcf37dbf
 P
  .github/workflows/regressivo.yml,9/a/9a024787740e9a4918f7502cabcca6cd8517c95d
+S
+#src/test/java/steps/LoginSteps.java,6/0/60a999fa2ae56d1081f61fa5b8a47ecba8253150
+]
+-src/test/java/steps/CadastroUsuarioSteps.java,4/a/4a23f078e040ed1c173a4b3dd92ad3fc3f7ff42a
+S
+#src/test/java/support/Commands.java,3/3/33bd9376b7fcc31a3ba3dd63bcde13516529664f
