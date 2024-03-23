@@ -6,15 +6,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import runner.RunCucumber;
 
+import java.time.Duration;
+
 public class Commands extends RunCucumber {
 
     public static void waitElementBeClickable(By element, Integer tempo) {
-        WebDriverWait wait = new WebDriverWait(getDriver(), tempo);
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(15L));
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
     public static void waitElementBeVisible(By element, Integer tempo) {
-        WebDriverWait wait = new WebDriverWait(getDriver(), tempo);
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(15L));
         wait.until(ExpectedConditions.visibilityOfElementLocated(element));
     }
 
