@@ -17,3 +17,5 @@ S
 -src/test/java/steps/CadastroUsuarioSteps.java,4/a/4a23f078e040ed1c173a4b3dd92ad3fc3f7ff42a
 S
 #src/test/java/support/Commands.java,3/3/33bd9376b7fcc31a3ba3dd63bcde13516529664f
+N
+.github/workflows/agendado.yml,9/8/985809a48cf22469d2383d40a9a090d3e3ce1e14

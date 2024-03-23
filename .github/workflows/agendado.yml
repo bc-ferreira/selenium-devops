@@ -1,8 +1,8 @@
 name: Testes Regressivos QAzando
 
 on:
-  pull_request:
-    branches: [ master ]
+  schedule:
+    - cron: '0 8 * * *'
 
 jobs:
   RunTest:
@@ -54,8 +54,8 @@ jobs:
           SLACK_CHANNEL: devops-qazando
           SLACK_COLOR: ${{ job.status }}
           SLACK_ICON: https://icon2.cleanpng.com/20171221/lle/success-png-image-5a3c42bdc288a6.4170951415138986857968.jpg
-          SLACK_MESSAGE: 'Testes de regressão executados com sucesso! :white_check_mark:'
-          SLACK_TITLE: 'Testes de regressão executados com sucesso! :white_check_mark:'
+          SLACK_MESSAGE: 'Testes AGENDAMENTO executados com sucesso! :white_check_mark:'
+          SLACK_TITLE: 'Testes AGENDAMENTO executados com sucesso! :white_check_mark:'
           SLACK_USERNAME: SUCESSO
 
       - name: Enviar notificação para o Slack - FALHA
@@ -66,6 +66,6 @@ jobs:
           SLACK_CHANNEL: devops-qazando
           SLACK_COLOR: ${{ job.status }}
           SLACK_ICON: https://cdn-icons-png.flaticon.com/512/148/148766.png
-          SLACK_MESSAGE: 'Erro ao executar testes de regressão! :fire:'
-          SLACK_TITLE: 'Erro ao executar testes de regressão! :fire:'
+          SLACK_MESSAGE: 'Erro ao executar testes AGENDAMENTO! :fire:'
+          SLACK_TITLE: 'Erro ao executar testes AGENDAMENTO! :fire:'
           SLACK_USERNAME: ERRO
