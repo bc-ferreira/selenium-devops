@@ -35,6 +35,10 @@ jobs:
       - name: Rodar os testes
         run: mvn test -Dtest=RunCucumber -Dbrowser=chrome-ci cluecumber-report:reporting
 
+      - name: Gerar Relatório
+        if: always()
+        run: mvn cluecumber-report:reporting
+
       - name: Arquivar Relatório
         if: always()
         uses: actions/upload-artifact@v3
