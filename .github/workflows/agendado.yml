@@ -1,4 +1,4 @@
-name: Testes Regressivos QAzando
+name: Testes Regressivos Devops Qazando - Schedule Agendado
 
 on:
   schedule:
